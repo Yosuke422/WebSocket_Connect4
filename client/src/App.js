@@ -5,7 +5,7 @@ import Modal from './components/Modal'
 import Confetti from 'react-confetti'
 import './App.css'
 
-const socket = io('http://localhost:3000')
+const socket = io('https://websocket-connect4.onrender.com')
 
 function App() {
     const [board, setBoard] = useState(Array(6).fill().map(() => Array(7).fill(0)))
